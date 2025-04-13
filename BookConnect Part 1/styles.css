@@ -28,3 +28,7 @@ body {
     padding: 15px;
 }
 
+.book-card:hover {
+    transform: translate (0, -5px); /*negative moves up the y-axis and positive moves down the y-axis*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
