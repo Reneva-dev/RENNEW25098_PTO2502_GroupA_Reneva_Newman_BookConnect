@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color:#f8f9fa; 
-    color: #333
+    color: #333;
 }
 
 .book-grid{
@@ -12,7 +12,7 @@ body {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    background: 
+    background: #f0f8ff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -39,3 +39,29 @@ body {
     object-fit: cover; /*ensure image fits container to preserve aspect ratio*/
     border-bottom: 1px solid #ddd; /*to seperate image from the rest of the card*/
 }
+
+.book-card .book-title {
+    font size: 1.2rem;
+    margin: 10px 0;
+    color: #2c3e50; 
+
+}
+
+.book-card .book-author {
+    font-size: 1rem;
+    color: #8e44ad;
+    margin: 5px 0;
+}
+
+.book-card .book-info {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin: 5px 0;
+}
+
+.book-card .book-date {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin: 5px 0;
+}
+
