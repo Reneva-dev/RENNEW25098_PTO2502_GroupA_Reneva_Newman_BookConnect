@@ -1,14 +1,8 @@
-//Comparison Operators
+let num1 = 2
 
-5 == 5 //true
-5 === "5" //false
-5 > 6 //false
-5 < 6 //true
-5 >= 5 //true
-5 <= 6 //true
+let num2 = 12
 
-//Logical Operators
-const a = false;
-const b = false;
+num1 = num1.toString()
+num2= num2.toString()
 
-console.log(!a || b);
+console.log(num1 > num2);
