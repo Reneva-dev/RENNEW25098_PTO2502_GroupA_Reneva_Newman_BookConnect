@@ -1,8 +1,28 @@
-let num1 = 2
+//Expressions and Statements
+let count = 5; //let count = is a statement which is used to define
+               //a variable named 'count' while '5' is an expression. 
 
-let num2 = 12
+//Examples od expression
+5 * 5;
+5 < 15;
+false;
 
-num1 = num1.toString()
-num2= num2.toString()
+{
+//Conditional and Logical Operators
+let x = 10;
+if (x > 6) {
+    //Do something
+}
+//Otherwise continue 
 
-console.log(num1 > num2);
+//Conditional Operators
+console.log (x == "10"); true 
+console.log (x === "10");  false
+console.log (x !== "10"); true 
+console.log (x > 6); true
+console.log (x < 6); false
+console.log (x >= 10); true
+console.log (x <= 10); true
+
+
+}
