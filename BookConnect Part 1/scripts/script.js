@@ -24,5 +24,31 @@ console.log (x < 6); false
 console.log (x >= 10); true
 console.log (x <= 10); true
 
+//Sometimes we may want to perform more complex conditional logic
+//This is where Logical Operatord come in
+
+//Logical Operators
+console.log(true && true); true
+console.log(true || false); true
+console.log(!false); true
+
+//Comparing Different Types
+//When comparing a string with a number, Javascript will 
+//convert the string to a number when doing the comparison. 
+//An empty string converts to 0. A non-numeric string converts 
+//to NaN which is always false
+console.log(5 > ""); true
+console.log(5 > "Code"); false
+console.log("5" > "6"); false 
+console.log("5" < "6"); true
+
+//Conditional Logic Continued
+let y = 5;
+if(y > 6){
+    console.log("We wanted to do this")
+}
+else {
+    console.log("We did this instead")
+}
 
 }
