@@ -11,7 +11,7 @@ false;
 //Conditional and Logical Operators
 let x = 10;
 if (x > 6) {
-    //Do something
+    console.log("This did run")
 }
 //Otherwise continue 
 
