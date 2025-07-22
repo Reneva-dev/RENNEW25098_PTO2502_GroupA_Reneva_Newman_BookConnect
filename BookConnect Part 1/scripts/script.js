@@ -88,5 +88,42 @@ else {
 //Ternary Operator - A shorthand if statement
 const k = 10;
 const y = 7;
-let first = (y < k) ? y : k
-console.log(first) 7
+let first = (y > k) ? y : k
+console.log(first);  10
+
+//Switch Statement 
+let page = "home"
+
+switch(page){
+    case "home": {
+        console.log("homepage")
+        break
+    }
+    case "about": {
+        console.log("aboutpage")
+        break
+    }
+    case "contact": {
+        console.log("contactpage")
+        break
+    }
+}
+
+//Loops
+let num = 0
+
+for(let x=0; x < 5; x++){
+    num = num + 1
+}
+
+console.log(num); 5
+
+while(true){
+    console.log("Infinite Loop")
+}
+
+let q = 0
+while(q < 5){
+    console.log("While Loop")
+    q++
+}
