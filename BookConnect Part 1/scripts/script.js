@@ -85,3 +85,8 @@ else {
     console.log("this line ran")
 }
 
+//Ternary Operator - A shorthand if statement
+const k = 10;
+const y = 7;
+let first = (y < k) ? y : k
+console.log(first) 7
