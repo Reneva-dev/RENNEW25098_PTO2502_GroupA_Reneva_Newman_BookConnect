@@ -132,3 +132,19 @@ let h = 10
 do {
     console.log("Always runs once")
 } while(h > 20)
+
+//Break Statement
+for(let x=0;x<1000;x++){
+    if(x === 5){
+        break
+    }
+    console.log(x); 0, 1, 2, 3, 4
+}
+
+//Continue statement
+for(let x=0;x<10;x++){
+    if(x === 5){
+        continue
+    }
+    console.log(x); 0, 1, 2, 3, 4, 6, 7, 8, 9
+}
