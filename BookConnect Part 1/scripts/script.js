@@ -127,3 +127,8 @@ while(q < 5){
     console.log("While Loop")
     q++
 }
+
+let h = 10
+do {
+    console.log("Always runs once")
+} while(h > 20)
