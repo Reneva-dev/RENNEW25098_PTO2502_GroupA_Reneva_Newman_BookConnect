@@ -173,3 +173,25 @@ console.log(arr); [ 1, 2, 3 ]
 const arr2 = [ 4, 5, 6 ];
 let arr3 = arr.concat(arr2);
 console.log(arr3); Array (6) [ 1, 2, 3, 4, 5, 6 ]
+
+//Concat 3 arrays
+const arr4 = arr.concat(arr2, arr3);
+console.log(arr4); Array(12) [ 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6]
+
+//Get the length of an array
+console.log(arr3.length); 6
+
+//Flatten Array
+const multiArr = [
+    [1, 2],
+    [3, 4],
+    [5, 6],
+];
+console.log(multiArr.flat()); Array (6) [ 1, 2, 3, 4, 5, 6]
+
+//Slice array to get part
+console.log(arr4.slice(4)); //Sliced from the 5th element  
+Array(8) [ 5, 6, 1, 2, 3, 4, 5, 6]
+
+//Looping though arrays 
+let arr1 = [ 1, 2, 3, 4];
