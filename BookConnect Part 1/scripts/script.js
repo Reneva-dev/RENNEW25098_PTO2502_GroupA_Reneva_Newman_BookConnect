@@ -311,4 +311,7 @@ const createSchedule = (creator, workHours, leisureHours) => {
     };
 };
 
+const newSchedule = createSchedule("Che", "9am-5pm", "5pm-12pm")
+
+console.log(newSchedule); {id: 1744281467441, creator; 'Che'; workHours: '9am-5pm'; leisureHours: '5pm-10pm'}
 
