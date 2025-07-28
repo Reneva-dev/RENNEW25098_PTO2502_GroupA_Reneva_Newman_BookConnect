@@ -148,3 +148,28 @@ for(let x=0;x<10;x++){
     }
     console.log(x); 0, 1, 2, 3, 4, 6, 7, 8, 9
 }
+
+//Arrays are compound data types
+
+const arr = [1, 2, 3]
+
+//Add an element to the end of an array
+arr.push("Hello");
+console.log(arr); [ 1, 2, 3 ]
+
+//Remove an element from the end 
+arr.pop();
+console.group(arr); [ 1, 2, 3]
+
+//Add an element to the start of an array
+arr.unshift("Hello");
+console.log(arr); ['Hello', 1, 2, 3]
+
+//Remove an element from the start
+arr.shift();
+console.log(arr); [ 1, 2, 3 ]
+
+//Concatenate (join together) 2 or more arrays
+const arr2 = [ 4, 5, 6 ];
+let arr3 = arr.concat(arr2);
+console.log(arr3); Array (6) [ 1, 2, 3, 4, 5, 6 ]
