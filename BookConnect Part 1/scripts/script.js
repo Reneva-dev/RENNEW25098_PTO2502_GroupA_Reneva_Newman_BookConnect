@@ -247,6 +247,47 @@ let authorsObject = bookConnectData[0]
 let values = Object.values(authorsObject);
 console.log(values);
 
+const x = 5;
+const y = 5;
+
+console.log(x === y); true
+
+const arr1 = [1, 2];
+const arr2 = [1, 2];
+
+console.log(arr1 === arr2); false
+
+let z = x
+console.log(z) 5 
+z = z + 1
+console.log(z) 6
+console.log(x) 5
+
+const arr3 = arr1;
+arr3.push("hello");
+console.log(arr1); [ 1, 2, 'hello']
+
+//How to copy arr1
+const arr4 = [...arr1];
+arr4.push("goodbye");
+console.log(arr1); [ 1, 2, 'hello']
+
+//Multi-dimensional arrays 
+const multiArray = [1, 2, 3, [1, 2, 3] ]
+const arr5 = multiArray;
+arr5[3].push("hello");
+console.log(multiArray); [ 1, 2, 3, [ 1, 2, 3, 'hello'] ]
+
+const arr6 = [...multiArray];
+arr6[3].push("goodbye");
+console.log(multiArray); [ 1, 2, 3 [1, 2, 3, 'hello', 'goodbye'] ]
+
+//Deep Copy
+const clone = JSON.parse(JSON.stringify(multiArray));
+clone [3].push("GoodAfternoon");
+console.log(multiArray); [ 1, 2, 3, [ 1, 2, 3, 'hello', 'goodbye'] ]
+
+
 
 
 
