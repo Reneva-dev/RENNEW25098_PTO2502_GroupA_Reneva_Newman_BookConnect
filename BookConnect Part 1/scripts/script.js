@@ -195,3 +195,34 @@ Array(8) [ 5, 6, 1, 2, 3, 4, 5, 6]
 
 //Looping though arrays 
 let arr1 = [ 1, 2, 3, 4];
+
+//forEach method
+arr.forEach((element) => {
+    console.log(element); 1, 2, 3, 4
+});
+
+//mapmethod runs 1 time for each, return is a
+//new array with values mapped from original array
+const newArray = arr.map((element) => {
+    return element + 5;
+});
+
+console.log(newArray); [ 6, 7, 8, 9 ]
+
+//Accessing array members - Remember arrays are zero indexed 
+console.log(arr[0]); 1
+console.log(arr[2]); 5
+console.log(arr[5]); undefined
+
+//Objects are also compund data types but instead of storing only values
+//They store key-value pairs 
+let obj = {
+    key1: "value1",
+    key2: "value2",
+    key3:"value3", 
+    key4:"100",
+    key5: [1, 2],
+    key6: {
+        subKey1: "subValue1",
+    },
+};
