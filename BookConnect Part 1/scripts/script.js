@@ -226,3 +226,14 @@ let obj = {
         subKey1: "subValue1",
     },
 };
+
+//Accessing object values
+console.log(obj["key1"]); 'value1'
+console.log(obj.newObj); { subKey1: 'subValue1' }
+
+//Accessing all keys
+console.log(Object.keys(obj)); Array(6) ['key1', 'key2', 'string', 'key4', 'newArr', 'newObj']
+
+//Accessing all values
+console.log(Object.values(obj)); Array(6) ['value1', 'value2', 'value3', '100', [ 1, 2 ], {subKey1: 'subValue1'}]
+
