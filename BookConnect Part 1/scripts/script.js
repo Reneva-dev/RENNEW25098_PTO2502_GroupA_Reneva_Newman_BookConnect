@@ -315,3 +315,21 @@ const newSchedule = createSchedule("Che", "9am-5pm", "5pm-12pm")
 
 console.log(newSchedule); {id: 1744281467441, creator; 'Che'; workHours: '9am-5pm'; leisureHours: '5pm-10pm'}
 
+//Methods
+function updateLeisureHours(leisureHours) {
+    const newHours = "10pm";
+    const updatedHours = leisureHours.slice(0, -4) + newHours;
+    return updatedHours;
+}
+updateLeisureHours("8pm-10pm");
+
+//Prototypes
+String.prototype.replaceFrom = function (index, replacement) {
+    return this.substring(0, index) + replacement;
+    };
+
+    let leisureHours = "5pm - 12pm";
+    const newLeisureHours = leisureHours.replaceFrom(leisureHours.length - 4, "10pm");
+    console.log(newLeisureHours); '5pm -10pm'
+
+
