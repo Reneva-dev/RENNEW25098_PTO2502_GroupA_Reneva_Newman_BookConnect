@@ -237,3 +237,14 @@ console.log(Object.keys(obj)); Array(6) ['key1', 'key2', 'string', 'key4', 'newA
 //Accessing all values
 console.log(Object.values(obj)); Array(6) ['value1', 'value2', 'value3', '100', [ 1, 2 ], {subKey1: 'subValue1'}]
 
+import { authors, genres, books } from "../data.mjs";
+
+const bookConnectData = [authors, genres, books];
+console.log(bookConnectData);
+
+let authorsObject = bookConnectData[0]
+
+let values = Object.values(authorsObject);
+console.log(values);
+
+
