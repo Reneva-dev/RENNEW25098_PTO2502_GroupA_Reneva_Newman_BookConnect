@@ -68,7 +68,7 @@ else if (x ==="first") {
 }
 
 //More conditional statements
-let x = "second";
+let x1 = "second";
 if(x === "third"){
     console.log("this line ran")
 }
@@ -87,7 +87,7 @@ else {
 
 //Ternary Operator - A shorthand if statement
 const k = 10;
-const y = 7;
+const y1 = 7;
 let first = (y > k) ? y : k
 console.log(first);  10
 
@@ -170,12 +170,12 @@ arr.shift();
 console.log(arr); [ 1, 2, 3 ]
 
 //Concatenate (join together) 2 or more arrays
-const arr2 = [ 4, 5, 6 ];
-let arr3 = arr.concat(arr2);
+const arr2a = [ 4, 5, 6 ];
+let arr3a = arr.concat(arr2);
 console.log(arr3); Array (6) [ 1, 2, 3, 4, 5, 6 ]
 
 //Concat 3 arrays
-const arr4 = arr.concat(arr2, arr3);
+const arr4a = arr.concat(arr2, arr3);
 console.log(arr4); Array(12) [ 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6]
 
 //Get the length of an array
@@ -194,7 +194,7 @@ console.log(arr4.slice(4)); //Sliced from the 5th element
 Array(8) [ 5, 6, 1, 2, 3, 4, 5, 6]
 
 //Looping though arrays 
-let arr1 = [ 1, 2, 3, 4];
+let arr1a = [ 1, 2, 3, 4];
 
 //forEach method
 arr.forEach((element) => {
@@ -258,10 +258,10 @@ const arr2 = [1, 2];
 console.log(arr1 === arr2); false
 
 let z = x
-console.log(z) 5 
+console.log(z); 5 
 z = z + 1
-console.log(z) 6
-console.log(x) 5
+console.log(z); 6
+console.log(x); 5
 
 const arr3 = arr1;
 arr3.push("hello");
@@ -287,6 +287,20 @@ const clone = JSON.parse(JSON.stringify(multiArray));
 clone [3].push("GoodAfternoon");
 console.log(multiArray); [ 1, 2, 3, [ 1, 2, 3, 'hello', 'goodbye'] ]
 
+//Objects
+const jobHours = {
+    offuce: "9am-5pm",
+    fisherman: "5am-9pm",
+    DeptofHomeAffairs: "10am-4pm",
+};
+
+const {office, fisgerman, DeptofHomeAffairs } = jobHours;
+console.log(DeptofHomeAffairs); '10am-4pm'
+
+//Functions
+function getUniqueId() {
+    return new Date.now();
+}
 
 
 
