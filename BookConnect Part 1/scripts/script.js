@@ -302,6 +302,13 @@ function getUniqueId() {
     return new Date.now();
 }
 
-
+const createSchedule = (creator, workHours, leisureHours) => {
+    return {
+        id: getUniqueId(),
+        creator: creator,
+        workHours: workHours, 
+        leisureHours: updateLeisureHours(leisureHours),
+    };
+};
 
 
